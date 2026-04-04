@@ -1,0 +1,86 @@
+.brand-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.txt-welcome {
+  font-size: 23px;
+  font-weight: lighter;
+  color: #000000;
+  margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-input:focus, .regist-input:focus {
+  border-color: #000;
+}
+
+.login-button, .regist-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-button:hover{
+  background: #333;
+}
+
+.login-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-card a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-card a:hover {
+  text-decoration: underline;
+}

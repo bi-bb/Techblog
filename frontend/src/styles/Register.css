@@ -1,0 +1,76 @@
+.brand-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  
+}
+.txt-regist {
+  font-size: 23px;
+  font-weight: lighter;
+  color: #000000;
+  margin-bottom: 40px;
+
+}
+.regist-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+}
+.regist-card {
+  width: 380px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  border-radius: 30px;
+}
+.regist-card h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+.regist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.regist-input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+.regist-input:focus {
+  border-color: #000;
+}
+.regist-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.regist-button:hover {
+  background: #333;
+}
+.regist-card p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.regist-card a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.regist-card a:hover {
+  text-decoration: underline;
+}
