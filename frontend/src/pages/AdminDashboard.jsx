@@ -79,7 +79,7 @@ function AdminDashboard() {
           </div>
 
           <div className="admin-card">
-            <p className="admin-card-label">Latest Post</p>
+            <p className="admin-card-label">Recent Posts</p>
             <h2>{posts[0]?.title ? "1 New" : "0"}</h2>
           </div>
         </div>
