@@ -36,26 +36,30 @@ Password: admin
 ---
 
 ##  Project Setup
-Clone the Repository
+## Clone the Repository
     git clone https://github.com/bi-bb/Techblog.git
     cd Techblog
- Setup Backend
+ ## Setup Backend
     cd backend
     npm install
-Create a .env
-    MONGO_URI=mongodb+srv://bi:bibi@bicluster.pndykmt.mongodb.net/techblogplatform?retryWrites=true&w=majority
-    PORT=5001
-    JWT_SECRET=bipenguin
-    ADMIN_USERNAME=admin@gmail.com
-    ADMIN_PASSWORD=admin
-    EMAIL_USER=bi.bbii511@gmail.com
-    EMAIL_PASS=rdgphmpqiadfvkzm
-run : npm start
-Set up frontend
+## Create a .env
+
+        ```env
+        PORT=5001
+        MONGO_URI=your_mongodb_connection_string
+        JWT_SECRET=your_jwt_secret
+        CLIENT_URL=http://localhost:3000
+        EMAIL_USER=your_email
+        EMAIL_PASS=your_app_password
+        ADMIN_EMAIL=your_admin_email
+        ADMIN_PASSWORD=your_admin_password
+        run : npm start
+        
+## Set up frontend
     cd frontend
     npm install
     npm run dev
-Run application
+## Run application
      Start backend, then frontend
 
 ## Features
