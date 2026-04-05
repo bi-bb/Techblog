@@ -1,0 +1,30 @@
+name: Run Test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install backend
+        run: |
+          cd backend
+          npm install
+
+      - name: Run test
+        run: |
+          cd backend
+          npm test
