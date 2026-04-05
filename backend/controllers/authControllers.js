@@ -15,7 +15,7 @@ const ADMIN_EMAIL = process.env.ADMIN_EMAIL?.toLowerCase();
 // Register
 const registerUser = async (req, res) => {
   try {
-    console.log("Register request body:", req.body);
+    console.log("Register request :", req.body);
     const { name, email, password } = req.body;
     console.log("Register request data:", { name, email, password });
 

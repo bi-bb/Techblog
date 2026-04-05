@@ -44,9 +44,9 @@ function AdminDashboard() {
           <a href="/admin/dashboard" className="admin-menu-item active">
             Dashboard
           </a>
-          <a href="/admin/posts" className="admin-menu-item">
+          {/* <a href="/admin/posts" className="admin-menu-item">
             Manage Posts
-          </a>
+          </a> */}
           <a href="/home" className="admin-menu-item">
             View Site
           </a>
