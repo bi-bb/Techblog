@@ -1,7 +1,7 @@
 const Post = require("../models/Post");
 
 // GET all posts
-const getPosts = async (req, res) => {
+exports.getPosts = async (req, res) => {
   try {
     const posts = await Post.find().sort({ createdAt: -1 });
     res.status(200).json(posts);
@@ -14,7 +14,7 @@ const getPosts = async (req, res) => {
 };
 
 // GET single post by id
-const getPostById = async (req, res) => {
+exports.getPostById = async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
 
@@ -150,11 +150,4 @@ exports.deletePost = async (req, res) => {
       message: error.message,
     });
   }
-};
-module.exports = {
-  getPosts,
-  getPostById,
-  createPost,
-  updatePost,
-  deletePost,
 };

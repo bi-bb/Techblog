@@ -137,5 +137,28 @@ router.delete("/:postId/comments/:commentId", async (req, res) => {
 });
 
 
+const {
+  getPosts,
+  getPostById,
+  createPost,
+  updatePost,
+  deletePost,
+} = require("../controllers/postControllers");
+console.log({
+  getPosts,
+  getPostById,
+  createPost,
+  updatePost,
+  deletePost,
+});
+
+router.get("/", getPosts);
+router.get("/:id", getPostById);
+router.post("/", createPost);
+router.put("/:id", updatePost);
+router.delete("/:id", deletePost);
+
+
+
 
 module.exports = router;
